@@ -10,7 +10,7 @@ class Hello {
 //        System.out.println(result);
 
         /**
-         * Datatype
+         * Primitive Datatypes
          */
         byte num1= 127;
         short num2 = 32668;
@@ -19,6 +19,27 @@ class Hello {
         boolean on = true;
         char grade = 'D';
         float points = 5.6f;
-        double doublepoints = 5.7;
+
+        /**
+         * conversion
+         */
+
+        byte b= 12;
+        int i= 256;
+        i = b;  //converted byte to integer
+
+
+        short s = 256;
+        int t = 1200;
+        t=s;  //converting short into integer
+        /**
+         * casting
+         */
+
+        short f= 24;
+        int r=2400;
+        r = (short) f;
+        System.out.println(r);
+
     }
 }
