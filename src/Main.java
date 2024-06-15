@@ -29,23 +29,36 @@ class Hello {
 //        System.out.println(results6);
 
 
-        /**
-         * relational operators
-         */
+//        /**
+//         * relational operators
+//         */
+//
+//        int num1= 12;
+//        int num2=12;
+//        boolean results1= num1 > num2;
+//        boolean results2= num1 < num2;
+//        boolean results3= num1 >= num2;
+//        boolean results4= num1 <= num2;
+//        boolean results5= num1 == num2;
+//        boolean results6= num1 != num2;
+//        System.out.println(results1);
+//        System.out.println(results2);
+//        System.out.println(results3);
+//        System.out.println(results4);
+//        System.out.println(results5);
+//        System.out.println(results6);
 
+        /**
+         * logical operators
+         */
         int num1= 12;
         int num2=12;
-        boolean results1= num1 > num2;
-        boolean results2= num1 < num2;
-        boolean results3= num1 >= num2;
-        boolean results4= num1 <= num2;
-        boolean results5= num1 == num2;
-        boolean results6= num1 != num2;
+        boolean results1= num1 > num2 && num1 < num2; // LOGICAL AND operator
+        boolean results3= num1 >= num2 || num1 <= num2;  // LOGICAL OR operator
+        boolean results5= num1 == num2
         System.out.println(results1);
-        System.out.println(results2);
         System.out.println(results3);
-        System.out.println(results4);
-        System.out.println(results5);
-        System.out.println(results6);
+        System.out.println(!results5); //NEGATION
+
     }
 }
