@@ -9,37 +9,23 @@ class Hello {
 //        int result= num1 + num2;
 //        System.out.println(result);
 
-        /**
-         * Primitive Datatypes
-         */
-        byte num1= 127;
-        short num2 = 32668;
-        int num3 = 2147483548;
-        long num4 = 4000000000000l;
-        boolean on = true;
-        char grade = 'D';
-        float points = 5.6f;
 
         /**
-         * conversion
+         * Operators
          */
-
-        byte b= 12;
-        int i= 256;
-        i = b;  //converted byte to integer
-
-
-        short s = 256;
-        int t = 1200;
-        t=s;  //converting short into integer
-        /**
-         * casting
-         */
-
-        short f= 24;
-        int r=2400;
-        r = (short) f;
-        System.out.println(r);
-
+        int num1 = 25;
+        int num2=5;
+        int results1= num1 + num2; //addition operator
+        int results2= num1 - num2; // minus operator
+        int results3= num1 / num2; //division operator
+        int results4= num1 % num2; //modulus operator
+        int results5= num1++;    // post-increment operator
+        int results6= ++num1;    // pre-increment operator
+        System.out.println(results1);
+        System.out.println(results2);
+        System.out.println(results3);
+        System.out.println(results4);
+        System.out.println(results5);
+        System.out.println(results6);
     }
 }
