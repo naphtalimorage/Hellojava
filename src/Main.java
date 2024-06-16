@@ -47,18 +47,64 @@ class Hello {
 //        System.out.println(results4);
 //        System.out.println(results5);
 //        System.out.println(results6);
+//
+//        /**
+//         * logical operators
+//         */
+//        int num1= 12;
+//        int num2=12;
+//        boolean results1= num1 > num2 && num1 < num2; // LOGICAL AND operator
+//        boolean results3= num1 >= num2 || num1 <= num2;  // LOGICAL OR operator
+//        boolean results5= num1 == num2;
+//        System.out.println(results1);
+//        System.out.println(results3);
+//        System.out.println(!results5); //NEGATION
+        /**
+         * if -else statements
+         */
+        int age = 18;
+        if(age < 18) {
+            System.out.println("Sorry! You are not qualified ");
+        } else {
+            System.out.println("Congratulation You qualify ");
+        }
 
         /**
-         * logical operators
+         * if - else-if
          */
-        int num1= 12;
-        int num2=12;
-        boolean results1= num1 > num2 && num1 < num2; // LOGICAL AND operator
-        boolean results3= num1 >= num2 || num1 <= num2;  // LOGICAL OR operator
-        boolean results5= num1 == num2
-        System.out.println(results1);
-        System.out.println(results3);
-        System.out.println(!results5); //NEGATION
+        int number1 = 20;
+        if(number1 < 10) {
+            System.out.println("Number is less than 10");
+        } else if(number1 < 20) {
+            System.out.println("Number is less than 20");
+        } else {
+            System.out.println("Number is greater");
+        }
 
+        /**
+         * for loop
+         */
+        for(int i = 0; i < 10; i++) {
+            System.out.println(i);
+        }
+
+        /**
+         * while loop
+         */
+
+        int count = 0;
+        while(count < 10) {
+            System.out.println(count);
+            count++;
+        }
+
+        /**
+         * do - while loop
+         */
+        int count = 0;
+        do{
+            System.out.println(count);
+            count++;
+        } while(count < 10);
     }
 }
