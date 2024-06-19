@@ -1,9 +1,9 @@
 class Hello {
-    public static void main(String[] args) {
-        System.out.println("Hello World");
-        /**
-         * Variables
-         */
+//    public static void main(String[] args) {
+//        System.out.println("Hello World");
+//        /**
+//         * Variables
+//         */
 //        int num1= 2;
 //        int num2= 4;
 //        int result= num1 + num2;
@@ -59,52 +59,19 @@ class Hello {
 //        System.out.println(results1);
 //        System.out.println(results3);
 //        System.out.println(!results5); //NEGATION
-        /**
-         * if -else statements
-         */
-        int age = 18;
-        if(age < 18) {
-            System.out.println("Sorry! You are not qualified ");
-        } else {
-            System.out.println("Congratulation You qualify ");
-        }
+//
 
-        /**
-         * if - else-if
-         */
-        int number1 = 20;
-        if(number1 < 10) {
-            System.out.println("Number is less than 10");
-        } else if(number1 < 20) {
-            System.out.println("Number is less than 20");
-        } else {
-            System.out.println("Number is greater");
-        }
+    /**
+     * working with Methods
+     */
+    static void addTwoNumbers() {
+        int num1 = 20;
+        int num2 = 20;
+        int result = num1 + num2;
+        System.out.println(result);
+    }
 
-        /**
-         * for loop
-         */
-        for(int i = 0; i < 10; i++) {
-            System.out.println(i);
-        }
-
-        /**
-         * while loop
-         */
-
-        int count = 0;
-        while(count < 10) {
-            System.out.println(count);
-            count++;
-        }
-
-        /**
-         * do - while loop
-         */
-        int count = 0;
-        do{
-            System.out.println(count);
-            count++;
-        } while(count < 10);
+    public static void main(String[] args) {
+        addTwoNumbers();
     }
 }
