@@ -61,17 +61,25 @@ class Hello {
 //        System.out.println(!results5); //NEGATION
 //
 
-    /**
-     * working with Methods
-     */
-    static void addTwoNumbers() {
-        int num1 = 20;
-        int num2 = 20;
-        int result = num1 + num2;
-        System.out.println(result);
+//    /**
+//     * working with Methods
+//     */
+//    static void addTwoNumbers() {
+//        int num1 = 20;
+//        int num2 = 20;
+//        int result = num1 + num2;
+//        System.out.println(result);
+//    }
+//
+//    public static void main(String[] args) {
+//        addTwoNumbers();
+//    }
+
+    static int addTwoNumbers(int num1, int num2) {
+        return num1 + num2;
     }
 
-    public static void main(String[] args) {
-        addTwoNumbers();
+    public static void main (String[] args) {
+        System.out.println(addTwoNumbers(20,20));
     }
 }
