@@ -75,11 +75,16 @@ class Hello {
 //        addTwoNumbers();
 //    }
 
-    static int addTwoNumbers(int num1, int num2) {
-        return num1 + num2;
-    }
+//
+    /**
+     * working with Class Attributes and objects
+     */
+     String fname = "Naphtali";
+     String lname = "Morage";
+     int age = 20;
 
-    public static void main (String[] args) {
-        System.out.println(addTwoNumbers(20,20));
-    }
+     public static void main(String[] args) {
+         Hello myObj = new Hello();
+         System.out.println("My Name is " + myObj.fname + " " + myObj.lname + " and am " + myObj.age + " years old.");
+     }
 }
