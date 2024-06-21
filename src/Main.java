@@ -112,24 +112,56 @@ class Hello {
 //        age = aging;
 //    }
 
+//    /**
+//     * working with Access Modifiers
+//     */
+//
+//    private         //private modifier
+//    String name = "Naphtali";
+//    int age = 20;
+//    int contact = 0716220216;
+//
+//    public void myDetails() {       //public modifier
+//        System.out.println("My Name is: " + name);
+//        System.out.println("Am " + age + " years old.");
+//        System.out.println("My Phone Number is:" + contact);
+//    }
+//
+//    public static void main(String[] args) {
+//        Hello myObj = new Hello();
+//        myObj.myDetails();
+//    }
+
     /**
-     * working with Access Modifiers
+     * working with getters and setters functions
      */
+    private
+    String name;
+    int age;
+    String contact;
 
-    private         //private modifier
-    String name = "Naphtali";
-    int age = 20;
-    int contact = 0716220216;
-
-    public void myDetails() {       //public modifier
-        System.out.println("My Name is: " + name);
-        System.out.println("Am " + age + " years old.");
-        System.out.println("My Phone Number is:" + contact);
+    public String getName() {
+        return name;
     }
 
-    public static void main(String[] args) {
-        Hello myObj = new Hello();
-        myObj.myDetails();
+    public int getAge() {
+        return age;
     }
 
+    public String getContact() {
+        return contact;
+    }
+
+    public void setName(String newName) {
+        this.name = newName;
+    }
+
+    public void setAge(int newAge) {
+        this.age = newAge;
+    }
+
+
+    public void setContact(String newContact) {
+        this.contact = newContact;
+    }
 }
