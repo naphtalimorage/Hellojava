@@ -99,16 +99,37 @@ class Hello {
 //          age = 20;
 //     }
 
-    /**
-     * working with Constructors parameters
-     */
-    String fname;
-    String lname;
-    int age;
+//    /**
+//     * working with Constructors parameters
+//     */
+//    String fname;
+//    String lname;
+//    int age;
+//
+//    public Hello(String firstname, String lastname, int aging) {
+//        fname = firstname;
+//        lname = lastname;
+//        age = aging;
+//    }
 
-    public Hello(String firstname, String lastname, int aging) {
-        fname = firstname;
-        lname = lastname;
-        age = aging;
+    /**
+     * working with Access Modifiers
+     */
+
+    private         //private modifier
+    String name = "Naphtali";
+    int age = 20;
+    int contact = 0716220216;
+
+    public void myDetails() {       //public modifier
+        System.out.println("My Name is: " + name);
+        System.out.println("Am " + age + " years old.");
+        System.out.println("My Phone Number is:" + contact);
     }
+
+    public static void main(String[] args) {
+        Hello myObj = new Hello();
+        myObj.myDetails();
+    }
+
 }
