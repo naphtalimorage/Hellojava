@@ -85,17 +85,30 @@ class Hello {
 //        System.out.println("My Name is " + fname +" "+ lname + " and am " + age +" years old.");
 //    }
 
+//    /**
+//     * working with constructors
+//     */
+//
+//     String fname;
+//     String lname;
+//     int age;
+//
+//     public Hello() {
+//          fname = "Naphtali";
+//          lname = "Morage";
+//          age = 20;
+//     }
+
     /**
-     * working with constructors
+     * working with Constructors parameters
      */
+    String fname;
+    String lname;
+    int age;
 
-     String fname;
-     String lname;
-     int age;
-
-     public Hello() {
-          fname = "Naphtali";
-          lname = "Morage";
-          age = 20;
-     }
+    public Hello(String firstname, String lastname, int aging) {
+        fname = firstname;
+        lname = lastname;
+        age = aging;
+    }
 }
