@@ -77,16 +77,25 @@ class Hello {
 
 //
 //
+//    /**
+//     * working with class methods (public)
+//     */
+//
+//    public void takeDetails(String fname, String lname , int age ) {
+//        System.out.println("My Name is " + fname +" "+ lname + " and am " + age +" years old.");
+//    }
+
     /**
-     * working with class methods (public)
+     * working with constructors
      */
 
-    public void takeDetails(String fname, String lname , int age ) {
-        System.out.println("My Name is " + fname +" "+ lname + " and am " + age +" years old.");
-    }
+     String fname;
+     String lname;
+     int age;
 
-    public static void main(String[] args) {
-        Hello myDetails = new Hello(); //create an object in order to access the class Method
-        myDetails.takeDetails("Naphtali","Morage",20);
-    }
+     public Hello() {
+          fname = "Naphtali";
+          lname = "Morage";
+          age = 20;
+     }
 }
